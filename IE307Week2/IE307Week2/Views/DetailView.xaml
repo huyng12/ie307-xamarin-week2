@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="IE307Week2.Views.DetailView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewmodels="clr-namespace:IE307Week2.ViewModels"
+    x:DataType="viewmodels:DetailViewViewModel"
+    Title="{Binding Title}">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="{Binding Item.Thumbnail}" />
+            <StackLayout Padding="20">
+                <Label Text="{Binding Item.Title}" FontSize="Header" FontAttributes="Bold" />
+                <Label Text="{Binding Item.Description}" FontSize="Body" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
