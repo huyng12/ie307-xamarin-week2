@@ -139,6 +139,24 @@
     <ImageAsset Include="Assets.xcassets\nt_mia.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\hn_lotte.imageset\hn_lotte.jpeg" />
     <ImageAsset Include="Assets.xcassets\hn_lotte.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\mammals.imageset\mammals.jpg" />
+    <ImageAsset Include="Assets.xcassets\mammals.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\garganey.imageset\garganey.jpg" />
+    <ImageAsset Include="Assets.xcassets\garganey.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\smooth_snake.imageset\smooth_snake.jpg" />
+    <ImageAsset Include="Assets.xcassets\smooth_snake.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\reptiles.imageset\reptiles.jpg" />
+    <ImageAsset Include="Assets.xcassets\reptiles.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\birds.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\birds.imageset\birds.jpg" />
+    <ImageAsset Include="Assets.xcassets\adder.imageset\adder.jpg" />
+    <ImageAsset Include="Assets.xcassets\adder.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\red_fox.imageset\red_fox.jpg" />
+    <ImageAsset Include="Assets.xcassets\red_fox.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\rabbit.imageset\rabbit.jpg" />
+    <ImageAsset Include="Assets.xcassets\rabbit.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\kestrel.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\kestrel.imageset\kestrel.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

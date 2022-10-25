@@ -7,12 +7,14 @@ using Xamarin.Forms;
 using IE307Week2.Models;
 using IE307Week2.Views;
 using IE307Week2.Services.Hotel;
+using IE307Week2.Services.AnimalWorld;
 
 namespace IE307Week2
 {
     public partial class MainPage : ContentPage
     {
         public IHotelService HotelService = DependencyService.Get<IHotelService>();
+        public IAnimalWorldService AnimalWorldService = DependencyService.Get<IAnimalWorldService>();
 
         public MainPage()
         {
@@ -25,9 +27,10 @@ namespace IE307Week2
             await Navigation.PushAsync(CityView);
         }
 
-        void AnimalWorldButton_Clicked(System.Object sender, System.EventArgs e)
+        async void AnimalWorldButton_Clicked(System.Object sender, System.EventArgs e)
         {
-            //await Navigation.PushAsync(new Exercise3Page());
+            var GroupView = new IE307Week2.Views.ListView(AppType.AnimalWorld, "Groups", AnimalWorldService.GetGroups());
+            await Navigation.PushAsync(GroupView);
         }
     }
 }
