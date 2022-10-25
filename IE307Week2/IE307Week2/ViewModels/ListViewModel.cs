@@ -12,7 +12,7 @@ using System.Runtime.CompilerServices;
 
 namespace IE307Week2.ViewModels
 {
-    public class ListViewViewModel
+    public class ListViewModel
     {
         readonly INavigation Navigation;
 
@@ -22,7 +22,7 @@ namespace IE307Week2.ViewModels
 
         public List<ListViewItem> Items { get; set; }
 
-        public ListViewViewModel(INavigation navigation, AppType appType, string title, List<ListViewItem> items)
+        public ListViewModel(INavigation navigation, AppType appType, string title, List<ListViewItem> items)
         {
             this.appType = appType;
             Title = title;

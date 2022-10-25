@@ -12,7 +12,7 @@ namespace IE307Week2.Views
     {
         public DetailView(DetailItem item)
         {
-            BindingContext = new DetailViewViewModel(item);
+            BindingContext = new DetailViewModel(item);
             InitializeComponent();
         }
     }

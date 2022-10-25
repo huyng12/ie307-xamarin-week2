@@ -21,6 +21,7 @@
     <None Remove="Views\" />
     <None Remove="Models\Hotel\" />
     <None Remove="Services\Hotel\" />
+    <None Remove="Models\AnimalWorld\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -29,5 +30,6 @@
     <Folder Include="Views\" />
     <Folder Include="Models\Hotel\" />
     <Folder Include="Services\Hotel\" />
+    <Folder Include="Models\AnimalWorld\" />
   </ItemGroup>
 </Project>

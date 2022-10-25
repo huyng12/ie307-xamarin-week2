@@ -99,6 +99,11 @@ namespace IE307Week2.Services.Hotel
             },
         };
 
+        private static string FormatMoney(int money)
+        {
+            return String.Format("{0:C0}", new decimal(money));
+        }
+
         private static ListViewItem CityItemToListViewItem(CityItem item)
         {
             return new ListViewItem
@@ -113,12 +118,11 @@ namespace IE307Week2.Services.Hotel
 
         private static ListViewItem HotelItemToListViewItem(HotelItem item)
         {
-            var formattedPrice = String.Format("{0:C0}", new decimal(item.Price));
             return new ListViewItem
             {
                 Id = item.Id,
                 Text = item.Name,
-                Detail = $"₫{formattedPrice} | {item.Address}",
+                Detail = $"{FormatMoney(item.Price)} | {item.Address}",
                 Thumbnail = item.Thumbnail,
                 IsLeaf = true,
             };
@@ -130,7 +134,7 @@ namespace IE307Week2.Services.Hotel
             {
                 Thumbnail = item.Thumbnail,
                 Title = item.Name,
-                Description = item.Description,
+                Description = $"{FormatMoney(item.Price)}\n\n{item.Description}",
             };
         }
 

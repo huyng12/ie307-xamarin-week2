@@ -10,11 +10,11 @@ namespace IE307Week2.Views
 {
     public partial class ListView : ContentPage
     {
-        readonly ListViewViewModel vm;
+        readonly ListViewModel vm;
 
         public ListView(AppType appType, string title, List<ListViewItem> items)
         {
-            BindingContext = vm = new ListViewViewModel(Navigation, appType, title, items);
+            BindingContext = vm = new ListViewModel(Navigation, appType, title, items);
             InitializeComponent();
         }
 
